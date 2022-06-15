@@ -83,7 +83,7 @@ function CountryInfo({ country }) {
           {borders ? (
             borders.map((b) => (
               <a
-                href={import.meta.env.BASE_URL + b.name.common.toLowerCase()}
+                href={`./${b.name.common.toLowerCase()}`}
                 key={b.name.common}
                 className="py-1 px-4 bg-white dark:bg-dark-mode-elements shadow-sm rounded"
               >

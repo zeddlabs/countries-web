@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Card({ flagUrl, name, population, region, capital }) {
   return (
-    <Link to={name.toLowerCase()}>
+    <Link to={`./${name.toLowerCase()}`}>
       <div className="overflow-hidden rounded-lg bg-white w-64 shadow-md cursor-pointer dark:bg-dark-mode-elements">
         <div>
           <img src={flagUrl} alt={name} />

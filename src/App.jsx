@@ -10,13 +10,10 @@ function App() {
     <div className="App font-body text-light-mode-text dark:text-light-mode-bg">
       <Header />
       <main className="px-4 lg:px-16">
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Routes>
-            <Route path={import.meta.env.BASE_URL} element={<Home />}></Route>
-            <Route
-              path={`${import.meta.env.BASE_URL}:name`}
-              element={<Detail />}
-            ></Route>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/:name" element={<Detail />}></Route>
           </Routes>
         </BrowserRouter>
       </main>
