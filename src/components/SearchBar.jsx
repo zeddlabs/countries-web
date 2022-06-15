@@ -1,3 +1,5 @@
+import React from "react";
+
 function SearchBar({ keyword, setKeyword }) {
   return (
     <div className="px-8 bg-white w-full shadow-lg shadow-slate-100 rounded flex items-center gap-4 text-light-mode-input md:w-96 dark:bg-dark-mode-elements dark:shadow-slate-800">

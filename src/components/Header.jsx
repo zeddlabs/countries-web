@@ -1,3 +1,5 @@
+import React from "react";
+
 function Header() {
   const darkModeHandler = () => {
     document.documentElement.classList.toggle("dark");

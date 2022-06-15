@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
@@ -11,8 +12,11 @@ function App() {
       <main className="px-4 lg:px-16">
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/:name" element={<Detail />}></Route>
+            <Route path={import.meta.env.BASE_URL} element={<Home />}></Route>
+            <Route
+              path={`${import.meta.env.BASE_URL}:name`}
+              element={<Detail />}
+            ></Route>
           </Routes>
         </BrowserRouter>
       </main>
