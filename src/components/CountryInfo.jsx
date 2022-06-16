@@ -82,13 +82,12 @@ function CountryInfo({ country }) {
           <p className="font-semibold">Border Countries: </p>
           {borders ? (
             borders.map((b) => (
-              <a
-                href={`./${b.name.common.toLowerCase()}`}
+              <p
                 key={b.name.common}
                 className="py-1 px-4 bg-white dark:bg-dark-mode-elements shadow-sm rounded"
               >
                 {b.name.common}
-              </a>
+              </p>
             ))
           ) : (
             <p>None</p>
