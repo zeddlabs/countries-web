@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function CountryInfo({ country }) {
   const [borders, setBorders] = useState([]);
@@ -24,7 +25,7 @@ function CountryInfo({ country }) {
     if (countriesCode) {
       fetchData();
     }
-  }, []);
+  }, [country]);
 
   return (
     <div className="flex gap-8 lg:gap-24 items-center flex-wrap md:flex-nowrap mb-12">
@@ -82,12 +83,13 @@ function CountryInfo({ country }) {
           <p className="font-semibold">Border Countries: </p>
           {borders ? (
             borders.map((b) => (
-              <p
+              <Link
+                to={`/${b.name.common.toLowerCase()}`}
                 key={b.name.common}
                 className="py-1 px-4 bg-white dark:bg-dark-mode-elements shadow-sm rounded"
               >
                 {b.name.common}
-              </p>
+              </Link>
             ))
           ) : (
             <p>None</p>
