@@ -15,7 +15,9 @@ function Home() {
     return await fetch("https://restcountries.com/v3.1/all")
       .then((res) => res.json())
       .then((data) => {
-        setDefaultCountries(data), setCountries(data), setIsLoading(false);
+        setDefaultCountries(data),
+          setCountries(data.reverse()),
+          setIsLoading(false);
       });
   };
 
