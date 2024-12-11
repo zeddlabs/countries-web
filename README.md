@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/IjulDev/countries-web)
-- Live Site URL: [Live site URL](https://ijuldev.github.io/countries-web)
+- Solution URL: [Solution URL](https://github.com/zeddlabs/countries-web)
+- Live Site URL: [Live site URL](https://zeddlabs.github.io/countries-web)
 
 ## My process
 
@@ -48,5 +48,5 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@IjulDev](https://www.frontendmentor.io/profile/IjulDev)
-- Instagram - [@zulfikar.pinem](https://www.instagram.com/zulfikar.pinem)
+- Instagram - [@zulfikar.js](https://www.instagram.com/zulfikar.js)
 - Facebook - [@mhd.zulfikar.pinem](https://www.facebook.com/mhd.zulfikar.pinem)
